@@ -1,0 +1,235 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Db3DModeling.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Db3DModeling.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Db3DModeling.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_SEL          CURSOR                  "res\\select.cur"
+IDC_CURSOR_NORMAL       CURSOR                  "res\\cur00002.cur"
+IDC_CURSOR_INPUT        CURSOR                  "res\\cursor_s.cur"
+IDC_CURSOR_ZOOM         CURSOR                  "res\\cur00004.cur"
+IDC_CURSOR_NORMAL1      CURSOR                  "res\\cursor_n.cur"
+IDC_CURSOR_SEL1         CURSOR                  "res\\cur00001.cur"
+IDC_CURSOR_ZOOM1        CURSOR                  "res\\cursor_z.cur"
+IDC_CURSOR_INPUT1       CURSOR                  "res\\cursor_i.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "ViewMenu"
+    BEGIN
+        MENUITEM "退出",                          ID_VIEWMENU_EXIT
+        MENUITEM SEPARATOR
+        MENUITEM "旋转",                          ID_VIEWMENU_ROTATE
+        MENUITEM "平移",                          ID_VIEWMENU_PAN
+        MENUITEM "缩放",                          ID_VIEWMENU_ZOOM
+        MENUITEM SEPARATOR
+        MENUITEM "顶视图",                         ID_VIEWMENU_TOPVIEW
+        MENUITEM "侧视图",                         ID_VIEWMENU_FRONTVIEW
+        MENUITEM "左视图",                         ID_VIEWMENU_LEFTVIEW
+        MENUITEM "透视图",                         ID_VIEWMENU_PRVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "线框图",                         ID_VIEWMENU_TRUSSVIEW
+        MENUITEM "实体图",                         ID_VIEWMENU_SOLIDVIEW
+        MENUITEM "消隐图",                         ID_VIEWMENU_WIREVIEW
+    END
+END
+
+IDR_MENU2 MENU
+BEGIN
+    POPUP "多视图菜单"
+    BEGIN
+        MENUITEM "添加视图",                        ID_ADD_VIEW
+        MENUITEM "删除视图",                        ID_DEL_VIEW
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_SDIM DIALOGEX 0, 0, 199, 58
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,85,34,50,14
+    PUSHBUTTON      "取消",IDCANCEL,142,34,50,14
+    COMBOBOX        IDC_EDIT1,9,10,182,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_APPENDIXDLG DIALOGEX 0, 0, 153, 43
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Dialog"
+FONT 9, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,21,50,16
+    PUSHBUTTON      "取消",IDCANCEL,99,21,50,16
+    CONTROL         "",IDC_SINGLEGRID,"Static",SS_BLACKFRAME | SS_SUNKEN | NOT WS_VISIBLE,7,4,136,14,WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG_INPLACE_BLANK_BASE_WND DIALOGEX 0, 0, 125, 29
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPCHILDREN
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_SDIM, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 198
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_APPENDIXDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 150
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 37
+    END
+
+    IDD_DIALOG_INPLACE_BLANK_BASE_WND, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Db3DModeling.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

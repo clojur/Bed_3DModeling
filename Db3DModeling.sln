@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Db3DModeling", "Db3DModeling.vcxproj", "{C0160617-1355-446F-93B2-A47272B54F03}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.13.162:8080/tfs/cdip_road
+		SccProjectUniqueName0 = Db3DModeling.vcxproj
+		SccProjectName0 = .
+		SccAuxPath0 = http://192.168.13.162:8080/tfs/cdip_road
+		SccLocalPath0 = .
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0160617-1355-446F-93B2-A47272B54F03}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C0160617-1355-446F-93B2-A47272B54F03}.Debug|Win32.Build.0 = Debug|Win32
+		{C0160617-1355-446F-93B2-A47272B54F03}.Release|Win32.ActiveCfg = Release|Win32
+		{C0160617-1355-446F-93B2-A47272B54F03}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

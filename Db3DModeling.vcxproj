@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C0160617-1355-446F-93B2-A47272B54F03}</ProjectGuid>
+    <RootNamespace>Db3DModeling</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\bin\Route\</OutDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\Bin\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>del /f /s /q ..\..\..\include\Route\Db3DModeling
+md ..\..\..\include\Route\Db3DModeling
+xcopy /s /c /q /r /y *.h  ..\..\..\include\Route\Db3DModeling
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(OutDir)\..\..\..\include\Route\;$(OutDir)\..\..\..\3rd\include;$(OutDir)\..\..\..\3rd/include/OSG</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;Db3DMODELING_EXPORTS;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/Zm500 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgGAd.lib;osgViewerd.lib;osgManipulatord.lib;osgTextd.lib;osgFXd.lib;osgTerraind.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir)\..\..\lib\Route\;$(OutDir)\..\..\..\3rd\lib</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile />
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\..\..\lib\Route\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName)D.pdb</ProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>del /f /s /q ..\..\include\Db3DModeling
+md ..\..\include\Db3DModeling
+xcopy /s /c /q /r /y *.h  ..\..\include\Db3DModeling</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\3rd\include;..\..\3rd\include\OSG;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;Db3DMODELING_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/Zm500 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgGA.lib;osgViewer.lib;osgManipulator.lib;osgText.lib;osgFX.lib;osgTerrain.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Configuration)\lib;$(SolutionDir)\3rd\$(Configuration)\lib</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(SolutionDir)$(Configuration)\Lib\$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="2DCameraManipulator.cpp" />
+    <ClCompile Include="BaseQiaoObject.cpp" />
+    <ClCompile Include="BoxSelector.cpp" />
+    <ClCompile Include="BoxZoom.cpp" />
+    <ClCompile Include="CommonFunctions.cpp" />
+    <ClCompile Include="compare_tools.cpp" />
+    <ClCompile Include="CompositeView.cpp" />
+    <ClCompile Include="Db3DModeling.cpp" />
+    <ClCompile Include="Db3DModelingUnitity.cpp" />
+    <ClCompile Include="Db3DProperty.cpp" />
+    <ClCompile Include="Db3DPropertyData.cpp" />
+    <ClCompile Include="DBManipulator.cpp" />
+    <ClCompile Include="DistHandler.cpp" />
+    <ClCompile Include="eraseHandler.cpp" />
+    <ClCompile Include="IDbPropertyInterface.cpp" />
+    <ClCompile Include="inplace_tool_window.cpp" />
+    <ClCompile Include="inplace_window_combo.cpp" />
+    <ClCompile Include="inplace_window_textbox.cpp" />
+    <ClCompile Include="MeshInfo.cpp" />
+    <ClCompile Include="string_tools.cpp" />
+    <ClCompile Include="IDb3DCommandLine.cpp" />
+    <ClCompile Include="IDHandler.cpp" />
+    <ClCompile Include="jacobi.cpp" />
+    <ClCompile Include="LocalResource.cpp" />
+    <ClCompile Include="ModelingUIData.cpp" />
+    <ClCompile Include="MoveObjHandler.cpp" />
+    <ClCompile Include="MultiViewPortOSG.cpp" />
+    <ClCompile Include="OffsetHandler.cpp" />
+    <ClCompile Include="OsgArrayHandler.cpp" />
+    <ClCompile Include="OSGBaseView.cpp" />
+    <ClCompile Include="OsgCopyHandler.cpp" />
+    <ClCompile Include="OsgDimDlg.cpp" />
+    <ClCompile Include="OSGDimObj.cpp" />
+    <ClCompile Include="OsgExtendHandler.cpp" />
+    <ClCompile Include="DbHandlerInterface.cpp" />
+    <ClCompile Include="OSGInterface.cpp" />
+    <ClCompile Include="OsgMirrorHandler.cpp" />
+    <ClCompile Include="OSGObject.cpp" />
+    <ClCompile Include="OSGTools.cpp" />
+    <ClCompile Include="OSGWraper.cpp" />
+    <ClCompile Include="PickHandler.cpp" />
+    <ClCompile Include="FastPolytopeIntersector.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SetupScene.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StretchHandler.cpp" />
+    <ClCompile Include="ViewControlData.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Db3DModeling.def" />
+    <None Include="res\cur00001.cur" />
+    <None Include="res\cur00002.cur" />
+    <None Include="res\cur00004.cur" />
+    <None Include="res\cursor_i.cur" />
+    <None Include="res\cursor_n.cur" />
+    <None Include="res\cursor_s.cur" />
+    <None Include="res\cursor_z.cur" />
+    <None Include="res\Db3DModeling.rc2" />
+    <None Include="res\select.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2DCameraManipulator.h" />
+    <ClInclude Include="BaseQiaoObject.h" />
+    <ClInclude Include="BoxSelector.h" />
+    <ClInclude Include="BoxZoom.h" />
+    <ClInclude Include="CommonFunctions.h" />
+    <ClInclude Include="compare_tools.h" />
+    <ClInclude Include="CompositeView.h" />
+    <ClInclude Include="Db3DModelingInc.h" />
+    <ClInclude Include="Db3DModelingLib.h" />
+    <ClInclude Include="Db3DModelingMacro.h" />
+    <ClInclude Include="Db3DModelingUnitity.h" />
+    <ClInclude Include="Db3DProperty.h" />
+    <ClInclude Include="Db3DPropertyData.h" />
+    <ClInclude Include="DBManipulator.h" />
+    <ClInclude Include="DistHandler.h" />
+    <ClInclude Include="eraseHandler.h" />
+    <ClInclude Include="IDbPropertyInterface.h" />
+    <ClInclude Include="inplace_tool_window.h" />
+    <ClInclude Include="inplace_window_combo.h" />
+    <ClInclude Include="inplace_window_textbox.h" />
+    <ClInclude Include="MeshInfo.h" />
+    <ClInclude Include="serialize.h" />
+    <ClInclude Include="string_tools.h" />
+    <ClInclude Include="IDb3DCommandLine.h" />
+    <ClInclude Include="IDHandler.h" />
+    <ClInclude Include="jacobi.h" />
+    <ClInclude Include="LocalResource.h" />
+    <ClInclude Include="ModelingUIData.h" />
+    <ClInclude Include="MoveObjHandler.h" />
+    <ClInclude Include="MultiViewPortOSG.h" />
+    <ClInclude Include="OffsetHandler.h" />
+    <ClInclude Include="OsgArrayHandler.h" />
+    <ClInclude Include="OSGBaseView.h" />
+    <ClInclude Include="OsgCopyHandler.h" />
+    <ClInclude Include="OsgDimDlg.h" />
+    <ClInclude Include="OSGDimObj.h" />
+    <ClInclude Include="OsgExtendHandler.h" />
+    <ClInclude Include="DbHandlerInterface.h" />
+    <ClInclude Include="OSGInterface.h" />
+    <ClInclude Include="OsgMirrorHandler.h" />
+    <ClInclude Include="OSGObject.h" />
+    <ClInclude Include="OSGTools.h" />
+    <ClInclude Include="OSGWraper.h" />
+    <ClInclude Include="PickHandler.h" />
+    <ClInclude Include="pointTextureData.h" />
+    <ClInclude Include="FastPolytopeIntersector.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SetupScene.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StretchHandler.h" />
+    <ClInclude Include="ViewControlData.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Db3DModeling.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Db3DModeling.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

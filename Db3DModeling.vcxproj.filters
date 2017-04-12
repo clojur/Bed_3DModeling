@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{e57acd68-8448-4f04-ae2c-b7ae670a999d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{37bde610-0f1e-488e-8680-329bfbba729e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{1e995871-31aa-4be7-9128-59896f006b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\handlers">
+      <UniqueIdentifier>{f0dd48aa-6a33-470b-adbc-7a504ad5cb9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{ae9b3e9a-9b7a-40d3-adf5-099e8ab7b80d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2DCameraManipulator.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="CompositeView.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiViewPortOSG.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="OSGBaseView.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="OSGInterface.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="OSGObject.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="OSGWraper.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="PickHandler.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="SetupScene.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewControlData.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="Db3DModelingUnitity.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="jacobi.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="OSGTools.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxSelector.cpp">
+      <Filter>UI\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxZoom.cpp">
+      <Filter>UI\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="DistHandler.cpp">
+      <Filter>UI\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveObjHandler.cpp">
+      <Filter>UI\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="OsgArrayHandler.cpp">
+      <Filter>UI\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="OsgCopyHandler.cpp">
+      <Filter>UI\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="OsgExtendHandler.cpp">
+      <Filter>UI\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="OsgMirrorHandler.cpp">
+      <Filter>UI\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="StretchHandler.cpp">
+      <Filter>UI\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="DBManipulator.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonFunctions.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="OffsetHandler.cpp">
+      <Filter>UI\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelingUIData.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseQiaoObject.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="OSGDimObj.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="OsgDimDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IDHandler.cpp">
+      <Filter>UI\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="eraseHandler.cpp">
+      <Filter>UI\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="FastPolytopeIntersector.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="IDb3DCommandLine.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="Db3DModeling.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="Db3DProperty.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="Db3DPropertyData.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="string_tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="compare_tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DbHandlerInterface.cpp">
+      <Filter>UI\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="IDbPropertyInterface.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshInfo.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="inplace_window_textbox.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="inplace_window_combo.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="inplace_tool_window.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Db3DModeling.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\cur00002.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cur00004.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursor_s.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Db3DModeling.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\select.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursor_n.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cur00001.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursor_z.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursor_i.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Db3DModelingInc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Db3DModelingLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Db3DModelingMacro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="2DCameraManipulator.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="CompositeView.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiViewPortOSG.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="OSGBaseView.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="OSGInterface.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="OSGObject.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="OSGWraper.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="PickHandler.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="pointTextureData.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="SetupScene.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewControlData.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="Db3DModelingUnitity.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="jacobi.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="OSGTools.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxSelector.h">
+      <Filter>UI\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxZoom.h">
+      <Filter>UI\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="DistHandler.h">
+      <Filter>UI\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveObjHandler.h">
+      <Filter>UI\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgArrayHandler.h">
+      <Filter>UI\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgCopyHandler.h">
+      <Filter>UI\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgExtendHandler.h">
+      <Filter>UI\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgMirrorHandler.h">
+      <Filter>UI\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="StretchHandler.h">
+      <Filter>UI\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="DBManipulator.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonFunctions.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="OffsetHandler.h">
+      <Filter>UI\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelingUIData.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseQiaoObject.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="OSGDimObj.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgDimDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IDHandler.h">
+      <Filter>UI\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="eraseHandler.h">
+      <Filter>UI\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="FastPolytopeIntersector.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="Db3DProperty.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="IDb3DCommandLine.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="Db3DPropertyData.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="string_tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="compare_tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DbHandlerInterface.h">
+      <Filter>UI\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="IDbPropertyInterface.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshInfo.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="inplace_tool_window.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="inplace_window_combo.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="inplace_window_textbox.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Db3DModeling.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

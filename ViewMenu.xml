@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+    @文件类型: 桥博界面配置信息
+    @版权声明: 上海同豪土木工程咨询有限公司
+   -->
+<Root>
+  <ViewMenu>
+    <!-- 右键菜单 -->
+    <menu node="CViewControlData" image="3.bmp">
+      <item name="退出" image="1" cmd="app.se" />
+      <item name="---"/>
+      <item name="旋转" image="2" cmd="app.ro" />
+      <item name="平移" image="3" cmd="app.pan"  />
+      <item name="缩放" image="4" cmd="app.sc" />
+      <item name="最大化" image="4" cmd="app.max" />
+      <item name="删除" image="4" cmd="app.delView" />
+      <item name="---"/>
+      <item name="顶视图" image="5" cmd="app.t"/>
+      <item name="侧视图" image="6" cmd="app.f"/>
+      <item name="左视图" image="7" cmd="app.l"/>
+      <item name="透视图" image="8" cmd="app.pr"/>
+      <item name="---"/>
+      <item name="线框图" image="9" cmd="app.truss"/>
+      <item name="实体图" image="10" cmd="app.solid"/>
+      <item name="消隐图" image="11" cmd="app.wire"/>
+    </menu>
+    <menu node="CFullBridgeOSG" image="3.bmp">
+      <item name="退出" image="1" cmd="app.se" />
+      <item name="---"/>
+      <item name="旋转" image="2" cmd="app.ro" />
+      <item name="平移" image="3" cmd="app.pan"  />
+      <item name="缩放" image="4" cmd="app.sc" />
+      <item name="最大化" image="4" cmd="app.max" />
+      <item name="---"/>
+      <item name="顶视图" image="5" cmd="app.t"/>
+      <item name="侧视图" image="6" cmd="app.f"/>
+      <item name="左视图" image="7" cmd="app.l"/>
+      <item name="透视图" image="8" cmd="app.pr"/>
+      <item name="---"/>
+      <item name="线框图" image="9" cmd="app.truss"/>
+      <item name="实体图" image="10" cmd="app.solid"/>
+      <item name="消隐图" image="11" cmd="app.wire"/>
+      <item name="---"/>
+      <item name="结构理解器" image="12" cmd="app.a"/>
+      <item name="效应分析器" image="13" cmd="app.b"/>
+
+      <item name="section" image="13" cmd="app.testys"/>
+
+    </menu>
+
+    <menu node="CStageViewOSG" image="3.bmp">
+      <item name="退出" image="1" cmd="app.se" />
+      <item name="---"/>
+      <item name="旋转" image="2" cmd="app.ro" />
+      <item name="平移" image="3" cmd="app.pan"  />
+      <item name="缩放" image="4" cmd="app.sc" />
+      <item name="最大化" image="4" cmd="app.max" />
+      <item name="---"/>
+      <item name="顶视图" image="5" cmd="app.t"/>
+      <item name="侧视图" image="6" cmd="app.f"/>
+      <item name="左视图" image="7" cmd="app.l"/>
+      <item name="透视图" image="8" cmd="app.pr"/>
+      <item name="---"/>
+      <item name="线框图" image="9" cmd="app.truss"/>
+      <item name="实体图" image="10" cmd="app.solid"/>
+      <item name="消隐图" image="11" cmd="app.wire"/>
+      <item name="---"/>
+      <item name="拆除构件" image="12" cmd="app.unstallele"/>
+      <item name="---"/>
+      <item name="钢束查询" image="13" cmd="app.tendonquery"/>
+    </menu>
+    <menu node="CDb4xSectionOsg" image="3.bmp">
+      <item name="退出" image="1" cmd="app.se" />
+      <item name="---"/>
+      <item name="直线" image="2" cmd="app.line"  />
+      <item name="区域" image="3" cmd="app.section" />
+      <item name="有效区域" image="4" cmd="app.validsection" />
+      <item name="检查点"   image="5" cmd="app.checkPoint" />
+      <item name="导入"   image="6" cmd="app.IMCAD" />
+      <item name="水平标注"   image="7" cmd="app.dx" />
+      <item name="竖直标注"   image="8" cmd="app.dy" />
+      <item name="长度标注"   image="9" cmd="app.dl" />
+      <item name="打破"   image="10" cmd="app.break" />
+    </menu>
+    <menu node="CConstructSimulateOSG" image="3.bmp">
+      <item name="退出" image="1" cmd="app.se" />
+      <item name="---"/>
+      <item name="播放" image="2" cmd="app.play"  />
+       <item name="停止" image="2" cmd="app.end"  />
+     <item name="暂停" image="2" cmd="app.pause"  />
+      <item name="继续" image="2" cmd="app.resume"  />
+
+      <item name="加速" image="2" cmd="app.addspeed"  />
+      <item name="减速" image="2" cmd="app.decreasespeed"  />
+
+    </menu>
+    
+  <menu node="CComponentOSG" image="3.bmp">
+    <item name="退出" image="1" cmd="app.se" />
+    <item name="---"/>
+    <item name="下一个" image="2" cmd="app.next"  />
+    <item name="上一个" image="2" cmd="app.pre"  />
+    <item name="左截面" image="2" cmd="app.leftsec"  />
+    <item name="右截面" image="2" cmd="app.rightsec"  />
+    <item name="单元" image="2" cmd="app.element"  />
+  </menu>
+    
+  </ViewMenu>
+
+ </Root>

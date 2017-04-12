@@ -1,0 +1,6 @@
+; Db3DModeling.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Db3DModeling"
+
+EXPORTS
+    ; Explicit exports can go here
