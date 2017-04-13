@@ -70,6 +70,7 @@ BEGIN_MESSAGE_MAP(CDbCompositeView, CView)
 	  ON_WM_CHAR()
 	  ON_WM_ERASEBKGND()
 	  ON_COMMAND_RANGE(10, 10000,OnMenuCommand)
+	  ON_WM_SIZE()
 
 	 
 	  ON_MESSAGE(DB_DBLCLICKOBJ, OnDblClick)
@@ -78,6 +79,14 @@ BEGIN_MESSAGE_MAP(CDbCompositeView, CView)
 END_MESSAGE_MAP()
 
 
+void CDbCompositeView::OnSize(UINT nType, int cx, int cy)
+{
+	CView::OnSize(nType, cx, cy);
+	if (mOSG)
+	{
+		mOSG->OnSize(cx, cy);
+	}
+}
 
 LRESULT CDbCompositeView::OnDblClick(WPARAM wParam, LPARAM lParem)
 {
@@ -330,7 +339,11 @@ BOOL CDbCompositeView::PreTranslateMessage(MSG* pMsg)
 	{	
 		if(pMsg->wParam == VK_RETURN || pMsg->wParam == VK_SPACE)
 		{
-			GetDb3DCommandLine()->OnText(pMsg->wParam, 1, 1);
+			auto cmdLine = GetDb3DCommandLine();
+			if (cmdLine)
+			{
+				cmdLine->OnText(pMsg->wParam, 1, 1);
+ 			}
 			return TRUE;
 		 
 		}	

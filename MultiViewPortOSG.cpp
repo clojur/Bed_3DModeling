@@ -1255,6 +1255,7 @@ void CDbCompositeViewOSG::DoAddView(CViewControlData* pControlData, bool bTemp)
 		pControlData->mView = view;
 		pControlData->mViewer = mViewer;
 
+
 		osg::Camera* camera = view->getCamera();
 		camera->setName(pControlData->mViewSet.strPath);
 
@@ -1325,6 +1326,8 @@ void CDbCompositeViewOSG::DoAddView(CViewControlData* pControlData, bool bTemp)
 
 		pControlData->CreateSreen();
 
+		if (!bTemp)
+			pControlData->setUpdateCallback(new CUpdateCallback(pControlData));
 	}
 }
 

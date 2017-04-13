@@ -31,6 +31,7 @@ public:
  	afx_msg void OnChar(UINT nChar, UINT nRepCnt, UINT nFlags);
 
 	afx_msg BOOL OnSetCursor(CWnd* pWnd, UINT nHitTest, UINT message);
+	virtual void OnSize(UINT nType, int cx, int cy);
 
  	afx_msg void OnMenuCommand(UINT nID);
 

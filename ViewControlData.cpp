@@ -4077,7 +4077,11 @@ BOOL CViewControlData::RepeatLastCommand()
 
 void CViewControlData::setUpdateCallback(osg::NodeCallback* pCallBack)
 {
-	mRoot->setUpdateCallback(pCallBack);
+	if (mRoot)
+	{
+		if (!mRoot->getUpdateCallback() )
+			mRoot->setUpdateCallback(pCallBack);
+	}
 }
 
 //重载了点选函数
